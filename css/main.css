@@ -246,3 +246,33 @@ footer {
         transform: translateY(0);
     }
 }
+
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    color: white;
+    place-content: center;
+    display: none;
+}
+
+.overlay-animation {
+    animation: overlay 3s forwards;
+}
+
+@keyframes overlay {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
