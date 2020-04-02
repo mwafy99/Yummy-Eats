@@ -160,3 +160,19 @@ footer {
     text-transform: uppercase;
     text-align: center;
 }
+
+/* media query */
+
+@media only screen and (min-width: 700px) {
+    .container {
+        margin: 0 4em;
+    }
+
+    .form-container {
+        margin: 2em -4em 0;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+}
