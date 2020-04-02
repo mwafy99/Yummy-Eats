@@ -115,7 +115,6 @@ input[type="button"]:hover {
     border: 1px solid #F89104;
 }
 
-
 /* bottom section */
 .bottom-section .container {
     margin: 0;
@@ -160,6 +159,20 @@ footer {
     text-transform: uppercase;
     text-align: center;
 }
+
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    letter-spacing: 0.5em;
+    display: grid;
+    place-content: center;
+    z-index: 1;
+    display: none;
+}
+
 
 /* media query */
 
@@ -229,37 +242,25 @@ footer {
     
 }
 
-/* css animation */
 
+/* css animations */
 .animate {
     animation: fadeIn 2s forwards;
 }
 
 @keyframes fadeIn {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(-4em);
     }
-
-    to {
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.overlay {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.9);
-    z-index: 1;
-    color: white;
-    place-content: center;
-    display: none;
-}
-
 .overlay-animation {
-    animation: overlay 3s forwards;
+    animation: overlay 2s forwards;
 }
 
 @keyframes overlay {
