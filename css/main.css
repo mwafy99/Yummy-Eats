@@ -17,7 +17,8 @@ body {
 /* top section */
 .hero-bg {
     background: #307D99 url(../images/bg.jpg);
-    background-position: 10% 55%;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
 }
 
 .top-section {
@@ -45,7 +46,7 @@ h1 span {
     text-transform: uppercase;
     font-size: 1.5rem;
     display: block;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     position: relative;
     z-index: 1;
 }
@@ -101,7 +102,7 @@ input[type="button"] {
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
-    padding: 1.2em 0;
+    padding: 1em 0;
     border-radius: 0.5em;
     margin-top: 1em;
     cursor: pointer;
@@ -146,9 +147,7 @@ input[type="button"]:hover {
     line-height: 2em;
 }
 
-.food-img {
-    margin: 2em 0 0.5em;
-}
+
 .food-img img {
     width: 100%;
 }
@@ -174,5 +173,60 @@ footer {
 }
 
 @media only screen and (min-width: 900px) {
+    
+    .top-section {
+        text-align: left;
+    }
 
+    .top-section h1 {
+        font-size: 3.5rem;
+    }
+    .top-section p {
+        margin: 0;
+    }
+
+    .top-section .container {
+        width: 700px;
+    }
+
+    .form-container {
+        margin: 4em 0 0;
+        padding: 2em;
+        border-radius: 1em;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    input[type="text"] {
+        margin: 0;
+        width: 170%;
+    }
+
+    input[type="button"] {
+        margin: 0;
+        width: 110%;
+        margin-right: 2em ;
+        font-size: 1rem;
+    }
+    
+    .bottom-section .container{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "bowl content";
+    }
+
+    .main-body {
+        grid-area: content;
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+    }
+    .food-img {
+        grid-area: bowl;
+    }
+    
 }
