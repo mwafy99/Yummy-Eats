@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: 0 1em;
+}
+
+/* top section */
+.hero-bg {
+    background: #307D99 url(../images/bg.jpg);
+    background-position: 10% 55%;
+}
+
+.top-section {
+    color: white;
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 1em 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 2em 0 1.5em;
+
+}
+
+h1 span {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 1em;
+    position: relative;
+    z-index: 1;
+}
+
+h1 span::before {
+    content: "";
+    position: absolute;
+    width: 4em;
+    height: 0.4em;
+    background: #00BFFF;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -0.3em;
+}
+
+header p { 
+    font-weight: bold;
+    margin: 0 1em 3em;
+}
+
+.form-container {
+    background-color: white;
+    margin: 2em -1em 0;
+    padding: 2em;
+}
+
+.form-container label {
+    color: #307D99;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 1em;
+}
+
+input[type="text"] {
+    border: 1px solid #707070;
+    width: 100%;
+    border-radius: 0.5em;
+    padding: 1em;
+    
+}
+
+.form-example {
+    color: rgb(146, 143, 143);
+    font-size: 0.9rem;
+    margin-top: 0.5em;
+}
+
+input[type="button"] {
+    width: 100%;
+    border: none;
+    background: #F89104;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1.2em 0;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+input[type="button"]:hover {
+    background: white;
+    color: #F89104;
+    border: 1px solid #F89104;
+}
+
+/* bottom section */
+.bottom-section .container {
+    margin: 0;
+}
+
+.main-body {
+    text-align: center;
+    padding: 3em 2em;
+    margin: 1em 0;
+}
+
+.main-body h2 {
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+
+}
+.main-body h2::before {
+    content:"";
+    background: rgba(0, 191, 255, 0.671);
+    width: 8em;
+    height: 0.4em;
+    position: absolute;
+    bottom: 0;
+    margin-left: -0.4em;
+    z-index: -1;
+}
+
+.main-body p {
+    line-height: 2em;
+}
+
+.food-img {
+    margin: 2em 0 0.5em;
+}
+.food-img img {
+    width: 100%;
+}
+
+footer {
+    font-size: 0.8rem;
+    color: #707070;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
