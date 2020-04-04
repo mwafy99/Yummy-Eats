@@ -9,5 +9,5 @@ btn.addEventListener('click', () => {
     // set display to none after 3 seconds 
     setTimeout(function () {
         overlay.style.display = "none";
-    }, 3000);
+    }, 2000);
 });
